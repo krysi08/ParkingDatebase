@@ -17,6 +17,8 @@ public class Run {
     public void addNewCar() {
 
         Car car = new Car("ABC23409","Opel","Astra",Color.BLACK);
+        Car car2 = new Car("YFH23409", "Renault", "5W", Color.RED);
+        Car car3 = new Car("OFC23409", "Peugeot", "206", Color.WHITE);
             carRepo.save(car);
 
 
@@ -24,4 +26,10 @@ public class Run {
     all.forEach(System.out::println);
 
     }
+
+    public void removeCar() {
+        Car car2 = new Car("ABC23409", "Opel", "Astra", Color.BLACK);
+        carRepo.delete(car2);
+    }
+
 }
