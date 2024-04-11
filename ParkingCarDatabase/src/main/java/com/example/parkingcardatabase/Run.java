@@ -14,7 +14,7 @@ public class Run {
 
 
 
-    public void startExample() {
+    public void addNewCar() {
 
         Car car = new Car("ABC23409","Opel","Astra",Color.BLACK);
             carRepo.save(car);
