@@ -25,9 +25,9 @@ public class Run {
         carRepo.save(car3);
 
 
+
     Iterable<Car> all = carRepo.findAll();
     all.forEach(System.out::println);
-
     }
 
     public void removeCar() {
